@@ -1,0 +1,29 @@
+🧠 Project Title: Intune-Like MDM Simulation
+🎯 Objective:
+To simulate a lightweight Mobile Device Management (MDM) system using Python that:
+
+Enforces device policies (e.g., password length, encryption, firewall status).
+
+Collects and logs compliance data from endpoints.
+
+Generates device compliance reports via Power BI dashboards.
+
+⚙️ Tech Stack
+Language: Python 3.x
+
+Database: SQLite (lightweight for simulation)
+
+Reporting: Power BI Desktop
+
+OS Compatibility: Windows 10/11 (Simulated endpoints)
+
+🧩 Project Structure
+
+mdm_simulation/
+├── mdm_policy.py           # Core logic for policy enforcement
+├── device_check.py         # Simulated device data
+├── compliance_logger.py    # Logs results to SQLite
+├── database.db             # SQLite database storing compliance data
+├── generate_csv.py         # Exports data for Power BI
+├── dashboard.pbix          # Power BI report (load CSV or DB)
+└── README.md               # Project overview

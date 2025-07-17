@@ -1,0 +1,19 @@
+📊 6. Power BI Dashboard (dashboard.pbix)
+Create this manually in Power BI Desktop after importing compliance_data.csv. Key visuals:
+
+Pie Chart: Compliant vs Non-Compliant Devices
+
+Table: Device ID, Username, OS, Compliance Status
+
+Line Chart: Compliance Trends over Time
+
+
+✅ Features Covered (Aligned with Oracle Job Description)
+
+Oracle Job Requirement	                  This Project Covers
+Intune / MDM / MAM	                  Simulates MDM policies & device compliance logic
+Device Compliance & Policy Enforcement	  Enforces password, firewall, encryption rules
+Reporting & Analysis	                  Power BI dashboard with compliance stats
+Windows OS Support	                  Simulates Windows 10/11 endpoints
+Python & Automation	                  End-to-end scripting with Python
+Monitoring & Support	                  Logs results; shows non-compliant devices

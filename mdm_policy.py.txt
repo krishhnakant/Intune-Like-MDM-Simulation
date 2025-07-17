@@ -1,0 +1,10 @@
+🔐 2. mdm_policy.py — Define & Enforce Policies
+
+def check_compliance(device):
+    compliance = {
+        "firewall_enabled": device["firewall_enabled"],
+        "encryption_enabled": device["encryption_enabled"],
+        "password_policy": device["password_length"] >= 8
+    }
+    compliant = all(compliance.values())
+    return compliant, compliance

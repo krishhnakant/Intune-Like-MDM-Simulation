@@ -1,0 +1,14 @@
+📦 1. device_check.py — Simulate Device Info
+
+import random
+
+def get_device_info():
+    # Simulated endpoint values
+    return {
+        "device_id": f"DEV-{random.randint(1000,9999)}",
+        "username": random.choice(["alice", "bob", "charlie"]),
+        "os_version": random.choice(["Windows 10", "Windows 11"]),
+        "firewall_enabled": random.choice([True, False]),
+        "encryption_enabled": random.choice([True, False]),
+        "password_length": random.randint(6, 14)
+    }

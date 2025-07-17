@@ -1,0 +1,10 @@
+📁 Downloadables / Ready-to-Use
+I can generate a downloadable ZIP file containing:
+
+All Python scripts (.py)
+
+SQLite database (.db)
+
+CSV data export
+
+Sample Power BI file (.pbix)

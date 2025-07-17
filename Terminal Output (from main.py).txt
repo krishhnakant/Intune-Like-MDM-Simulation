@@ -1,0 +1,61 @@
+✅ Terminal Output (from main.py)
+
+DEV-1432 - Compliant: False | Details: {'firewall_enabled': False, 'encryption_enabled': True, 'password_policy': True}
+DEV-3671 - Compliant: True  | Details: {'firewall_enabled': True, 'encryption_enabled': True, 'password_policy': True}
+DEV-8053 - Compliant: False | Details: {'firewall_enabled': True, 'encryption_enabled': False, 'password_policy': True}
+DEV-2920 - Compliant: False | Details: {'firewall_enabled': True, 'encryption_enabled': True, 'password_policy': False}
+DEV-4417 - Compliant: True  | Details: {'firewall_enabled': True, 'encryption_enabled': True, 'password_policy': True}
+DEV-6785 - Compliant: False | Details: {'firewall_enabled': False, 'encryption_enabled': False, 'password_policy': True}
+DEV-3279 - Compliant: True  | Details: {'firewall_enabled': True, 'encryption_enabled': True, 'password_policy': True}
+DEV-9012 - Compliant: False | Details: {'firewall_enabled': True, 'encryption_enabled': True, 'password_policy': False}
+DEV-2451 - Compliant: False | Details: {'firewall_enabled': False, 'encryption_enabled': True, 'password_policy': True}
+DEV-7834 - Compliant: True  | Details: {'firewall_enabled': True, 'encryption_enabled': True, 'password_policy': True}
+
+
+📄 Data Stored in database.db
+
+| timestamp           | device\_id | username | os\_version | compliant |
+| ------------------- | ---------- | -------- | ----------- | --------- |
+| 2025-07-17 12:01:32 | DEV-1432   | alice    | Windows 11  | False     |
+| 2025-07-17 12:01:33 | DEV-3671   | bob      | Windows 10  | True      |
+| 2025-07-17 12:01:34 | DEV-8053   | charlie  | Windows 10  | False     |
+| 2025-07-17 12:01:35 | DEV-2920   | bob      | Windows 11  | False     |
+| 2025-07-17 12:01:36 | DEV-4417   | alice    | Windows 10  | True      |
+| 2025-07-17 12:01:37 | DEV-6785   | charlie  | Windows 11  | False     |
+| 2025-07-17 12:01:38 | DEV-3279   | alice    | Windows 11  | True      |
+| 2025-07-17 12:01:39 | DEV-9012   | bob      | Windows 10  | False     |
+| 2025-07-17 12:01:40 | DEV-2451   | charlie  | Windows 10  | False     |
+| 2025-07-17 12:01:41 | DEV-7834   | alice    | Windows 11  | True      |
+
+
+📊 Power BI Insights (from compliance_data.csv)
+These are generated visuals — you'd create them in Power BI using the CSV.
+
+1. Pie Chart: Compliance Distribution
+
+Compliant Devices: 4
+
+Non-Compliant Devices: 6
+
+| Device ID | Username | OS Version | Compliant |
+| --------- | -------- | ---------- | --------- |
+| DEV-3671  | bob      | Windows 10 | ✅ Yes     |
+| DEV-8053  | charlie  | Windows 10 | ❌ No      |
+| ...       | ...      | ...        | ...       |
+
+
+3. Line Chart: Compliance Over Time
+
+X-axis: Timestamp
+
+Y-axis: Count of Compliant Devices at each run
+
+This output simulates real-world MDM behavior and is ideal to present during interviews or in your GitHub portfolio to demonstrate your grasp of:
+
+Endpoint compliance
+
+System health monitoring
+
+Data logging & reporting
+
+Policy-based configuration (just like Intune or SCCM)

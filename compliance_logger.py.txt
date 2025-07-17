@@ -1,0 +1,27 @@
+🗃️ 3. compliance_logger.py — Store to SQLite
+
+import sqlite3
+from datetime import datetime
+
+def log_compliance(device, compliant):
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
+
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS compliance (
+            id INTEGER PRIMARY KEY,
+            timestamp TEXT,
+            device_id TEXT,
+            username TEXT,
+            os_version TEXT,
+            compliant TEXT
+        )
+    ''')
+
+    cursor.execute('''
+        INSERT INTO compliance (timestamp, device_id, username, os_version, compliant)
+        VALUES (?, ?, ?, ?, ?)
+    ''', (datetime.now(), device["device_id"], device["username"], device["os_version"], str(compliant)))
+
+    conn.commit()
+    conn.close()

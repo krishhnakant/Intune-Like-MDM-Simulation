@@ -1,0 +1,12 @@
+🔁 4. main.py — Run Simulation
+
+from device_check import get_device_info
+from mdm_policy import check_compliance
+from compliance_logger import log_compliance
+
+if __name__ == "__main__":
+    for _ in range(10):  # simulate 10 devices
+        device = get_device_info()
+        compliant, checks = check_compliance(device)
+        log_compliance(device, compliant)
+        print(f"{device['device_id']} - Compliant: {compliant} | Details: {checks}")

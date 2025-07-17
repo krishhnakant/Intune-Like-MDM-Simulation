@@ -1,0 +1,13 @@
+📤 5. generate_csv.py — Export Data for Power BI
+python
+
+import sqlite3
+import pandas as pd
+
+def export_csv():
+    conn = sqlite3.connect("database.db")
+    df = pd.read_sql_query("SELECT * FROM compliance", conn)
+    df.to_csv("compliance_data.csv", index=False)
+    conn.close()
+
+export_csv()
