@@ -1,0 +1,77 @@
+
+=========================================================
+Project Documentation: Excel-Based Legal Ops Dashboard
+=========================================================
+
+Project Title:
+--------------
+Excel-Based Legal Operations Dashboard (Academic Simulation)
+
+Author:
+-------
+Addanki Krishnakanth
+
+Certified By:
+-------------
+Native Engineering, Noida
+
+Date of Completion:
+-------------------
+5 July 2025
+
+Objective:
+----------
+To design and implement a simulation of a legal task management system using Microsoft Excel
+with features like SLA tracking, status updates, and reporting for litigation-related workflows.
+
+Project Description:
+--------------------
+This project aims to replicate the core functionalities of a real-world legal operations dashboard.
+The system allows users to enter, monitor, and analyze tasks using structured tables, formulas,
+conditional formatting, and optional Python-based validation.
+
+Key Features:
+-------------
+1. Task Entry Table with columns:
+   - Task ID
+   - Client Name
+   - Task Type
+   - Assigned To
+   - Start Date
+   - Due Date
+   - Status
+   - Priority
+   - Completion %
+
+2. Automated Calculations and SLA Compliance:
+   - Remaining days calculation using Excel formulas
+   - SLA breach flagging if task duration exceeds the limit
+   - Conditional formatting to highlight overdue and completed tasks
+
+3. Dashboard Summary (Optional Enhancement):
+   - Total tasks, In-progress, Completed
+   - Bar and Pie Charts (can be added in Excel or Power BI)
+
+4. Python Automation Script (Optional):
+   - Python file `sla_rules.py` to analyze SLA breaches and export flagged tasks
+   - Requires: pandas, openpyxl
+
+How to Use:
+-----------
+1. Open the Excel file `Legal_Ops_Dashboard.xlsx`
+2. Enter new tasks into the table
+3. Excel will automatically calculate days remaining and SLA status
+4. Use filters or sort features to manage and view task statuses
+5. (Optional) Run the Python script for bulk SLA analysis
+
+Customization:
+--------------
+- Change SLA rule (e.g., 3 days) in the formula or Python variable
+- Add new columns like department, severity, etc.
+- Visual dashboards can be integrated for reporting
+
+Conclusion:
+-----------
+This academic project simulates real-time legal task workflows in a lightweight, user-friendly format.
+It is suitable for portfolio display, internship support tasks, or entry-level legal tech environments.
+
